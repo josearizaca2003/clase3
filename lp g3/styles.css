@@ -1,0 +1,98 @@
+*{ 
+    margin: 0;
+    padding: 0;
+}
+header{ 
+    display: flex;
+    justify-content: space-between;
+    background-color: #07356580;
+
+}
+.logo
+{ 
+    margin-top: 20px;
+    position: relative;
+  animation: latido 0.1s infinite alternate;
+
+}
+@keyframes latido{
+    from {
+        transform:  scale3d(0.5);
+    }
+    to{
+        transform: scale(1.2);
+
+    }
+}    
+.sociales{
+    margin-top: -20px;
+}
+nav{
+    text-align: center;
+    background-color: #F5AC22;
+    height: 40px;
+}
+ul{
+    margin-top: 0px;
+    margin-right: 10px;
+}   
+ul{
+    margin: 0px;
+    padding-top: 10px;
+}
+nav ul li{
+    display: inline;
+    padding: 10px 10px 10px;
+}
+nav ul li:hover{
+    background-color: #073565;
+    padding: 10px 10px 10px 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #073565;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+section{
+    display: flex;
+    flex-flow: wrap;
+}
+article{
+    padding: 10px;
+    border: 20px solid #073565;
+    margin: 15px;
+    flex:20%;
+}
+.imagen{
+    text-align: center;
+}
+.imagen img{
+    width: 200px;
+}
+.imagen img:hover{
+    transform: rotate(15deg) scale(1.2);
+    filter: none;
+}
+.f1{
+    filter: grayscale();
+}
+.f3:hover{
+    filter: none;
+}
+.f2{
+    filter: blur(10px);
+}
+.f2:hover{
+    filter: none;
+}
+.f3{
+    filter: invert(80%);
+}
+.f3:hover{
+    filter: none;
+}
